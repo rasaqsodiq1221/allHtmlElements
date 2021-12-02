@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- the address tag, just like an address indicates personal information,   -->
+  <address>
+    1b, ayo ogidan street <br/>
+    suberu oje, alagbado, <br/>
+    lagos. <br/>
+    08148266400. <br/>
+    it automatically formats the text to look like an address in italics
+  </address>
+
+  <!-- article element represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable (e.g., in syndication). -->
+
+  <article>
+    <h1>
+      the function of article 
+    </h1>
+    <p>
+      its just like sectioning, with each article been differented with the h1, h2 ... tags <br/>
+      the article can have another article nested in it, just like a post and its comments.
+    </p>
+    <article>
+      <h2>
+        comment section:
+      </h2>
+      <p>
+        what is the different between the article and div tag.
+      </p>
+    </article>
+  </article>
+
+  <!-- aside element represents a portion of a document whose content is only indirectly related to the document's main content. 
+
+ -->
+ <p>Salamanders are a group of amphibians with a lizard-like appearance, including short legs and a tail in both larval and adult forms.</p>
+
+ <aside>
+     <p>The Rough-skinned Newt defends itself with a deadly neurotoxin. <b>this is the aside part</b></p>
+ </aside>
+ 
+ <p>Several species of salamander inhabit the temperate rainforest of the Pacific Northwest, including the Ensatina, the Northwestern Salamander and the Rough-skinned Newt. Most salamanders are nocturnal, and hunt for insects, worms and other small creatures.</p>
+
+ <footer>
+  <p>
+    A <footer> typically contains information about the author of the section, copyright data or links to related documents.
+  </p>
+  <footer>
+    <p>
+      © copyright 2021
+    </p>
+  </footer>
+  
+ </footer>
+
+ <!-- the h1 to h6 tags -->
+ <h1>Beetles</h1>
+    <h2>External morphology</h2>
+        <h3>Head</h3>
+            <h4>Mouthparts</h4>
+        		<h5>Thorax</h5>
+            		<h6>Prothorax</h6>
+<!-- the main tag -->
+  <main>
+    <p>
+      main indicates the important facts and main information about a particular topic   
+    </p>
+  </main>
+  <!-- the nav element contains links to specific portion of the page and to another document entirely -->
+  <nav >
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  <!-- section element -->
+  <section>
+    <h1>
+      the section element is best for SEO and screen readers
+    </h1>
+    <p>
+      If the contents of the element represent a standalone, atomic unit of content that makes sense syndicated as a standalone piece (e.g. a blog post or blog comment, or a newspaper article), the <article> element would be a better choice.
+      If the contents represent useful tangential information that works alongside the main content, but is not directly part of it (like related links, or an author bio), use an <aside>.
+      If the contents represent the main content area of a document, use <main>.
+      If you are only using the element as a styling wrapper, use a <div>. A rule of thumb is that a <section> should logically appear in the outline of a document.
+    </p>
+  </section>
+ <!--  blockqoute elements -->
+  <h2>the blockqoute indicates that text is being quoted from another source</h2>
+  <h3>the browser renders it visually by indenting. <br> cite attribute is usually alongside blockquote</h3>
+  <blockquote cite="http://www.worldwildlife.org/who/index.html">
+    For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
+  </blockquote>
+
+  <!-- the figure and figcaption elements -->
+
+  <h1>
+    the figure is used for images and snippets, figcaption describes
+  </h1>
+  <p>it is a selfcontained content that doesnot disturb the flow of the document when removed</p>
+  <figure>
+    <img src="https://media.istockphoto.com/photos/herd-of-african-elephants-at-golden-sunset-picture-id1149359095?k=20&m=1149359095&s=612x612&w=0&h=H0zeLev7p0SsnrJgdPncFtrwcZoATCGzi80P7t6FF64=" alt="an elephant at sunset">
+    <figcaption>
+      an elephant at sunset- figcaption
+    </figcaption>
+  </figure>
+<!-- dl-description list  dt- descrition term dd- description details -->
+  
+  <h2>
+    the dl and dt works like the ordered and unordered list but without being numbered or bulleted rather it describes
+  </h2> 
+  <p>Please use the following paint colors for the new house:</p>
+
+<dl>
+    <dt>Denim (semigloss finish)</dt>
+    <dd nowrap="yes">Ceiling -this part does not wrap at the attribute nowrap is set 'yes'</dd>
+ 
+    <dt>Denim (eggshell finish)</dt>
+    <dt>Evening Sky (eggshell finish)</dt>
+    <dd nowrap="no">Layered on the walls - this part is default no' nowrap </dd>
+</dl>
+
+<!-- i used div too -->
+<h1>
+  i used div
+</h1>
+<div>
+  div is a container that doesnt do anything with the content but used when styling with css. it is commonly used <br>as html as being restricted to structure alone why css is used for styling.
+</div>
+
+
+
+</body>
+</html>
