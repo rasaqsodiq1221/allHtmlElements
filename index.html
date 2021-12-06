@@ -260,16 +260,223 @@
   <li>Alan Shepard</li>
 </ul>
 
+<!-- pre element presents and renders exactly as written in the html file -->
+<pre>
+  L          TE
+    A       A
+      C    V
+       R A
+       DOU
+       LOU
+      REUSE
+      QUE TU
+      PORTES
+    ET QUI T'
+    ORNE O CI
+     VILISÉ
+    OTE-  TU VEUX
+     LA    BIEN
+    SI      RESPI
+            RER       - Apollinaire
+</pre>
+<p>
+      L          TE
+      A       A
+        C    V
+         R A
+         DOU
+         LOU
+        REUSE
+        QUE TU
+        PORTES
+      ET QUI T'
+      ORNE O CI
+       VILISÉ
+      OTE-  TU VEUX
+       LA    BIEN
+      SI      RESPI
+              RER       - Apollinaire
+  the same effect wont show if it was a p tag
+</p>
+
+<!-- lets use the anchor element and its attributes -->
+<h1>the anchor element</h1>
+<p> the href is used to navigate to a web address or anyother possible links sha
+  <br/> the dowmlaod attribute is used for downloading content instead of navigating to a link <br/> it can be used with a value or not. 
+</p>
+<a href="./myw3schoolsimage.jpg"><img src="./myw3schoolsimage.jpg" alt="W3Schools" width="104" height="142"></a>
+<a href="https://images.unsplash.com/photo-1638548719890-850eb54bd059?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" download="unsplash"><img src="https://images.unsplash.com/photo-1638548719890-850eb54bd059?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt="W3Schools" width="104" height="142"></a>
+
+<a href="tel:+2348148266400">the href attribute can also take a tel: value.... call sodiq</a>
+<a href="mailto:rasaqsodiq1221@gmail.com">the href attribute can also take a mailto: value.... mail sodiq</a>
+
+<a href="https://en.wikipedia.org/wiki/Main_Page" hreflang="ar">wiki page</a>
+
+<p> piing attribute of an anchor element is used for tracking and monitoring <br> Specifies the URL to be notified if the user follows the hyperlink. Must be a space separated list of one or more valid URLs</p>
+
+<a href="https://www.w3schools.com/html" ping="https://www.w3schools.com/trackpings">w3schools</a>
+
+<p>The referrerpolicy attribute specifies which referrer information to send when the user clicks on the hyperlink. <br>
+i dont know much about it yet</p>
+
+<p>
+  The rel attribute specifies the relationship between the current document and the linked document.
+
+Only used if the href attribute is present.
+
+Tip: Search engines can use this attribute to get more information about a link!
+</p>
+
+<p>
+  _blank	Opens the linked document in a new window or tab
+_self	Opens the linked document in the same frame as it was clicked (this is default)
+_parent	Opens the linked document in the parent frame
+_top	Opens the linked document in the full body of the window
+framename	Opens the linked document in the named iframe
+
+</p>
+
+<a href="https://www.w3schools.com/html" target="_blank" >w3schools</a>
+<a href="https://www.w3schools.com/html" target="_self" >w3schools</a>
+<a href="https://www.w3schools.com/html" target="_parent" >w3schools</a>
+<a href="https://www.w3schools.com/html" target="_top" >w3schools</a>
+<a href="https://www.w3schools.com/html" target="framename" >w3schools</a>
 
 
 
+<h2>the abbr element and dfn element</h2>
+<p>the abbr is normally used with the title attribute. <br> it indicates the meaning of abbreviations without disturbing the flow of the content <br> the meaning can be seen when hovering is done.</p>
+
+<p>she is the <abbr title="love of my life">LOML</abbr>. <br>
+dfn element can also be used. when i met her, i fell in <dfn title="state of heartly confusion">love</dfn> - dfn gives the meaning without affecting the flow
+</p>
+
+<h2>
+  the b em i and strong element
+</h2>
+<p>
+  the b element is used to <b>draw attention</b> <br>
+  the em and strong element are used to to make <em>stress emphasies</em> and <strong>bring attention to relevant point</strong>. the i element shows a text is different from its surrounding text.. either in language, usage, thought. <i>et cetera.</i>
+</p>
+
+<h1>The bdi element - Isolate the usernames from the surrounding text-direction settings:</h1>
+
+<p>In the example below, usernames are shown along with the number of points in a contest. If the bdi element is not supported in the browser, the username of the Arabic user would confuse the text (the bidirectional algorithm would put the colon and the number "90" next to the word "User" rather than next to the word "points"). <cite>w3schools</cite> </p>
+
+<ul>
+ <li>User <bdi>hrefs</bdi>: 60 points</li>
+ <li>User <bdi>jdoe</bdi>: 80 points</li>
+ <li>User <bdi>إيان</bdi>: 90 points</li>
+</ul>
+
+<h1>the bdo element changes the direction of text rendered</h1>
+
+<h1>Famous seaside songs</h1>
+
+<p>The English song "Oh I do like to be beside the seaside"</p>
+
+<p>Looks like this in Hebrew: <span dir="rtl">אה, אני אוהב להיות ליד חוף הים</span></p>
+
+<p>In the computer's memory, this is stored as <bdo dir="ltr">אה, אני אוהב להיות ליד חוף הים</bdo></p>
+
+<h2>the code element</h2>
+<p>it basically gives a text a font to make it look like a code. for instance. <code> gitclone</code> this file, its beneficial</p>
 
 
+<h2>the data and time element</h2>
+<p>
+  The <data> tag is used to add a machine-readable translation of a given content.
 
+    This element provides both a machine-readable value for data processors, and a human-readable value for rendering in a browser.
+    
+    Tip: If the content is time- or date-related, use the <time> element instead.
+</p>
+<ul>
+  <li><data value="21053">Cherry Tomato</data></li>
+  <li><data value="21054">Beef Tomato</data></li>
+  <li><data value="21055">Snack Tomato</data></li>
+</ul>
 
+<p>The concert starts at <time datetime="20:00">20:00</time> and you'll be able to enjoy the band for at least <time datetime="PT2H30M">2h 30m</time>.</p>
 
+<h2>
+  the kbd element
+</h2>
+<p>the kbd element indicates a text to be a keyboard input. it is rendered by a browser differently from surrounding text  </p>
+<p>Please press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd> to re-render an MDN page.</p>
+<p>
+  the samp element also does similar function and can be nested in a kbd and vice versa. all these can be override using the css styling 
+</p>
 
+<h1>the mark element</h1>
+<p>
+  this mark <mark>highlights</mark> texts
+</p>
 
+<h2>the q element is used for quoting a text</h2>
+<p> <q>i love you</q>, he said.</p>
+
+<h2>the del s and ins elements</h2>
+<p>
+  the s element is used for <s>strikethrough</s>, while the del and ins elements are used to delete and add, when editing a document.
+</p>
+<blockquote>
+  There is <del>nothing</del> <ins>no code</ins> either good or bad, but <del>thinking</del> <ins>running it</ins> makes it so.
+</blockquote>
+
+<h2>
+  the small element  
+</h2>
+
+<p>is used to indicate text like &copy; <small>copyright</small>, the browser renders it a little smaller thn normal text.</p>
+
+<h2>the span element</h2>
+<p>the span is just like div. but its an inline container that allows other text/image to be placed in a single line</p>
+
+<h2>the sub and sup element</h2>
+<p>Almost every developer's favorite molecule is
+  C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub>, also known as "caffeine."</p>
+
+  <p>The <b>Pythagorean theorem</b> is often expressed as the following equation:</p>
+
+  <p><var>a<sup>2</sup></var> + <var>b<sup>2</sup></var> = <var>c<sup>2</sup></var></p>
+<h2>
+  the u element 
+</h2>
+<p>You could use this element to highlight <u>speling</u> mistakes, so the writer can <u>corect</u> them. it like underlines them. csss can be used to style them</p>
+
+<h2>
+  the var element
+</h2>
+<p>
+  The <var> HTML element represents the name of a variable in a mathematical expression or a programming context. 
+</p>
+
+<p>The volume of a box is <var>l</var> × <var>w</var> × <var>h</var>, where <var>l</var> represents the length, <var>w</var> the width and <var>h</var> the height of the box.</p>
+
+<h2>the audio element</h2>
+<p>the audio element is used to upload an audio.
+  <audio controls loop muted src="./Quran - Mahmoud al-Hosary - Surah001 (www.aswatalislam.net).mp3"> the file is not supported</audio> </p>
+
+  <h2>the image and video element</h2>
+  <p>
+    <img src="./myw3schoolsimage.jpg" alt="w3schools">
+  </p>
+  <video src="./Stop Quitting- How to Stick to Your Goals and Routines.mp4" controls> <track default kind="captions"> video not supported</video>
+  
+  <h2>
+    the iframe element
+  </h2>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/_Yaez8kM5vY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+  <h2>the audio, picture and video elements can be given different sources <br>
+  for picture the attribute srcset is given and for video and audio the src is used..</h2>
+  <picture>
+    <source srcset="logo-768.png 768w, logo-768-1.5x.png 1.5x">
+    <source srcset="logo-480.png, logo-480-2x.png 2x">
+    <img src="logo-320.png" alt="logo">
+  </picture>
+  
 
 </body>
 </html>
