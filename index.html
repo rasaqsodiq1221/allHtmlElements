@@ -478,5 +478,249 @@ dfn element can also be used. when i met her, i fell in <dfn title="state of hea
   </picture>
   
 
+  <h2>
+    the table element and every surrounding elements
+  </h2>
+
+  <p>
+    the caption element is used to give the table title. <br>
+    The <col> HTML element defines a column within a table and is used for defining common semantics on all common cells. It is generally found within a <colgroup> element. <br>
+      The <colgroup> HTML element defines a group of columns within a table. <br>
+        The <th> HTML element defines a cell as header of a group of table cells, it is used with scope attribute to define the row and column.<br>
+
+  </p>
+  <table>
+    <caption>He-Man and Skeletor facts</caption>
+    <tr>
+        <td> </td>
+        <th scope="col" class="heman">He-Man</th>
+        <th scope="col" class="skeletor">Skeletor</th>
+    </tr>
+    <tr>
+        <th scope="row">Role</th>
+        <td>Hero</td>
+        <td>Villain</td>
+    </tr>
+    <tr>
+        <th scope="row">Weapon</th>
+        <td>Power Sword</td>
+        <td>Havoc Staff</td>
+    </tr>
+    <tr>
+        <th scope="row">Dark secret</th>
+        <td>Expert florist</td>
+        <td>Cries at romcoms</td>
+    </tr>
+</table>
+
+<h2>creating a school timetable in html.</h2>
+<table border="1">
+  <caption>
+    school time table
+  </caption>
+  <thead>
+    <tr> 
+      <td colspan="6" align="center">time table</td>
+    </tr>
+  
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="6"><strong>hours</strong></td>
+      <th scope="col">mon </th>
+      <th scope="col">tues </th>
+      <th scope="col">wed </th>
+      <th scope="col">thurs </th>
+      <th scope="col">fri</th>
+    </tr>
+    <tr>
+      <td>science</td>
+      <td>maths</td>
+      <td>science</td>
+      <td>maths</td>
+      <td>arts</td>
+    </tr>
+    <tr>
+      <td>science</td>
+      <td>maths</td>
+      <td>science</td>
+      <td>maths</td>
+      <td>arts</td>
+    </tr>
+    <tr>
+      <td colspan="5" align="center"><strong>Lunch</strong></td>
+    </tr>
+    <tr>
+      <td>science</td>
+      <td>maths</td>
+      <td>science</td>
+      <td>maths</td>
+      <td rowspan="2">projects</td>
+    </tr>
+    <tr>
+      <td>science</td>
+      <td>maths</td>
+      <td>science</td>
+      <td>maths</td>
+      
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan="6" align="center">finally</td>
+    </tr>
+  </tfoot>
+</table>
+
+<h2>the form elements and surrounding elements</h2>
+<p>The form element is a container for different types of input elements, such as: text fields, checkboxes, radio buttons, submit buttons, etc.</p>
+<form action="">
+
+  <input type="button" value="submit">
+
+  <button type="button">
+    add to favorites
+  </button>
+  <button type="menu" formtarget="_blank">
+    home
+
+  </button>
+  <button type="reset">
+    reset
+  </button>
+  <button type="submit">
+    submit
+  </button>
+
+  <p>
+    the datalist element is used with option element. both followed an inout element with list attribute. <br>
+    <strong>the list attribute value is the same as the id of the datalist</strong>
+  </p>
+  <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
+  <datalist id="ice-cream-flavors">
+    <option value="chocolate">chocolate</option>
+    <option value="sugar">sugar</option>
+    <option value="biscuits">biscuits</option>
+    <option value="ice cream">ice cream</option>
+    <option value="youghurt">youghurt</option>
+  </datalist>
+</form>
+
+<h2>the fieldset and legend element</h2>
+<p>the legend and fieldset are used as shown below</p>
+
+<fieldset>
+  <legend>Choose your favorite monster</legend>
+
+  <input type="radio" id="kraken" name="monster">
+  <label for="kraken">Kraken</label><br/>
+
+  <input type="radio" id="sasquatch" name="monster">
+  <label for="sasquatch">Sasquatch</label><br/>
+
+  <input type="radio" id="mothman" name="monster">
+  <label for="mothman">Mothman</label>
+</fieldset>
+
+<h2>testing all input element  types for form</h2>
+<form action="">
+  <input type="text">
+  <input type="button" value="register">
+  <input type="checkbox" name="money" id="">
+  <label for="money">dollars</label>
+  <input type="checkbox" name="money" id="">
+  <label for="money">naira</label>
+  <input type="checkbox" name="money" id="">
+  <label for="money">pounds</label>
+  <input type="color" name="" id="">
+  <input type="date" name="" id="" value="2018-07-22">
+  <input type="datetime-local" id="meeting-time"
+       name="meeting-time" value="2018-06-12T19:30"
+       min="2018-06-07T00:00" max="2018-06-14T00:00">
+  <input type="email" name="" id="" placeholder="john@example.com">
+  <input type="file" name="" id="">
+  <input type="hidden" name="">
+  <input type="image" src="" alt="">
+  <input type="month" name="" id="">
+  <input type="number" name="" id="">
+  <input type="password" name="" id="">
+  <input type="radio" name="" id="">
+  <input type="range" name="" id="">
+  <input type="reset" value="">
+  <input type="search" name="" id="">
+  <input type="submit" value="">
+  <input type="tel" name="" id="">
+  <input type="text" name="" id="">
+  <input type="time" name="" id="">
+  <input type="url" name="" id="">
+  <input type="week" name="" id="">
+</form>
+
+<p>the meter tag</p>
+<label for="fuel">Fuel level:</label>
+
+<meter id="fuel"
+       min="0" max="100"
+       low="33" high="66" optimum="80"
+       value="32">
+    at 32/100
+</meter>
+<h2>the select, optgroup and option elements</h2>
+<select id="dino-select">
+  <optgroup label="Theropods">
+      <option>Tyrannosaurus</option>
+      <option>Velociraptor</option>
+      <option>Deinonychus</option>
+  </optgroup>
+  <optgroup label="Sauropods">
+      <option>Diplodocus</option>
+      <option>Saltasaurus</option>
+      <option>Apatosaurus</option>
+  </optgroup>
+</select>
+
+<label for="file">File progress:(progress element is used)</label>
+
+<progress id="file" max="100" value="70"> 70% </progress>
+
+<h2>textarea element</h2>
+<textarea id="story" name="story"
+          rows="5" cols="33">
+It was a dark and stormy night...
+</textarea>
+<textarea id="story" name="story">
+It was a dark and stormy night...
+</textarea>
+
+<h2>
+  the details and summary element
+</h2>
+<p>
+  The details HTML element creates a disclosure widget in which information is visible only when the widget is toggled into an "open" state. <br> A summary or label must be provided using the summary element.
+</p>
+<details>
+  <summary>Details</summary>
+  Something small enough to escape casual notice.
+  <details>
+    <summary>age</summary>
+    my age is of no concern
+  </details>
+</details>
+
+<h1>The dialog element</h1>
+
+<p>This is some text.</p>
+
+<p>This is some text.</p>
+
+<dialog open>This is an open dialog window</dialog>
+
+<p>This is some text.</p>
+
+<p>This is some text.</p>
+
+
+<h1>the remaining elements i refused to spend my time on <br> are the deprecated elements. is there a reason  i should?</h1>
+
+
 </body>
 </html>
